@@ -9,7 +9,6 @@ import Foundation
 import UIKit
 import Alamofire
 import SwiftyJSON
-import SwiftUI
 
 protocol NetworkServiceDelegate: AnyObject {
     func fetchTracks(results: [Results])
