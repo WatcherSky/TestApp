@@ -16,7 +16,7 @@ class MainViewController: UIViewController {
     private var sections: [Section] = [.menu, .grid, .table]
     private var results = [Results]()
     private var itemsShows = 10
-           
+    
     //MARK: - ViewController life Cycle
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -79,7 +79,7 @@ extension MainViewController: UITableViewDelegate, UITableViewDataSource {
             return Constants.tableHeight
         }
     }
-
+    
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let section = sections[indexPath.section]
         
@@ -109,12 +109,12 @@ extension MainViewController: UITableViewDelegate, UITableViewDataSource {
             return 0
         }
     }
-
+    
     func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
-          let headerView = UIView()
+        let headerView = UIView()
         headerView.backgroundColor = UIColor.lightGray
-          return headerView
-      }
+        return headerView
+    }
     
     func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
         if indexPath.row == self.results.count - 5 && results.count != 40 {

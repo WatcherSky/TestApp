@@ -9,18 +9,18 @@ import UIKit
 
 class GridTableViewCell: UITableViewCell {
     @IBOutlet private var collectionView: UICollectionView!
-   
+    
     private let itemHeight: CGFloat = 80
     var gridItemNames = ["Машины", "Магазин запчастей",
                          "Запчасти", "Коммерческие",
-                    "Штрафы и сервисы", "Ремонт и услуги",
+                         "Штрафы и сервисы", "Ремонт и услуги",
                          "Kolesa Гид", "Прочее"]
-       
+    
     override func awakeFromNib() {
         super.awakeFromNib()
-       setupCollectionView()
+        setupCollectionView()
     }
-        
+    
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
     }
