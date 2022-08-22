@@ -117,7 +117,7 @@ extension MainViewController: UITableViewDelegate, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
-        if indexPath.row == self.results.count - 5 && results.count != 40 {
+        if indexPath.row == self.results.count - 5 && results.count >= 40 {
             itemsShows += 10
             networkService.getTracks(limit: itemsShows)
         }
