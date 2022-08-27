@@ -10,10 +10,7 @@ import UIKit
 class MenuTableViewCell: UITableViewCell {
     @IBOutlet private weak var collectionView: UICollectionView!
     private let squareitemSide = 110
-    private let itemNames = ["k_letter","o_letter",
-                             "l_letter","e_letter",
-                             "s_letter","a_letter",
-                             "k_letter","z_letter"]
+    private let itemNames = ["k_letter","z_letter"]
     
     override func awakeFromNib() {
         super.awakeFromNib()
