@@ -31,7 +31,7 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="OqO-cL-06W">
-                        <barButtonItem key="leftBarButtonItem" title="КОЛЁСА" id="4zL-xv-icL">
+                        <barButtonItem key="leftBarButtonItem" title="КОЛЁСА" style="plain" id="4zL-xv-icL">
                             <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" title="Новости" id="aNe-3a-5WS"/>
