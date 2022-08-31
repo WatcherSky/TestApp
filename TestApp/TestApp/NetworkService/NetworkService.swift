@@ -43,6 +43,8 @@ class NetworkService {
             }
             guard let data = dataResponse.data else { return }
             completion(self.parseJSON(data))
+            
+            
         }
     }
     

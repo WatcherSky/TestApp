@@ -15,7 +15,7 @@ class MainViewController: UIViewController {
     private let networkService = NetworkService()
     private var sections: [Section] = [.menu, .grid, .table]
     private var results = [Results]()
-    private var itemsShows = 10
+    private var itemsShown = 10
     
     //MARK: - ViewController life Cycle
     override func viewDidLoad() {
@@ -38,7 +38,7 @@ class MainViewController: UIViewController {
     
     private func setupNetworkService() {
         networkService.setViewDelegate(networkDelegate: self)
-        networkService.getTracks(limit: itemsShows)
+        networkService.getTracks(limit: itemsShown)
     }
 }
 
@@ -60,9 +60,9 @@ extension MainViewController: UITableViewDelegate, UITableViewDataSource {
         let section = sections[section]
         switch section {
         case .menu:
-            return Constants.menuCount
+            return SectionItems.menuCount
         case .grid:
-            return Constants.gridCount
+            return SectionItems.gridCount
         case .table:
             return results.count
         }
@@ -72,11 +72,11 @@ extension MainViewController: UITableViewDelegate, UITableViewDataSource {
         let section = sections[indexPath.section]
         switch section {
         case .menu:
-            return Constants.menuHeight
+            return SectionHeight.menuHeight
         case .grid:
-            return Constants.gridHeight
+            return SectionHeight.gridHeight
         case .table:
-            return Constants.tableHeight
+            return SectionHeight.tableHeight
         }
     }
     
@@ -118,10 +118,8 @@ extension MainViewController: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
          if indexPath.row == self.results.count - 5 && results.count <= 40 {
-             itemsShows += 10
-             networkService.getTracks(limit: itemsShows)
+             itemsShown += 10
+             networkService.getTracks(limit: itemsShown)
          }
      }
 }
-
-//COMMENTS

@@ -29,7 +29,6 @@
 		E77B3D842868825800B45B05 /* MenuTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E77B3D822868825800B45B05 /* MenuTableViewCell.xib */; };
 		E7A548262895793900B93CD3 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7A548252895793900B93CD3 /* NetworkService.swift */; };
 		E7A548282897AC2200B93CD3 /* Results.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7A548272897AC2200B93CD3 /* Results.swift */; };
-		E7B5EC2828AA4B9100D3D477 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7B5EC2728AA4B9100D3D477 /* Constants.swift */; };
 		E7F5E78928AE90CF00ECA839 /* Extensions + UICollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7F5E78828AE90CF00ECA839 /* Extensions + UICollectionView.swift */; };
 /* End PBXBuildFile section */
 
@@ -60,7 +59,6 @@
 		E77B3D822868825800B45B05 /* MenuTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MenuTableViewCell.xib; sourceTree = "<group>"; };
 		E7A548252895793900B93CD3 /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
 		E7A548272897AC2200B93CD3 /* Results.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Results.swift; sourceTree = "<group>"; };
-		E7B5EC2728AA4B9100D3D477 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		E7F5E78828AE90CF00ECA839 /* Extensions + UICollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extensions + UICollectionView.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -116,11 +114,10 @@
 			children = (
 				E77B3D872868944400B45B05 /* AppSceneDelegate */,
 				E7F5E78A28AE90F500ECA839 /* Extensions */,
-				E74EBE1528B0C7A50094C5FD /* Constants */,
+				E74EBE1428B0C7800094C5FD /* TableViewSection */,
+				E7C3AA1E28BF2E3D00A655D0 /* NetworkService */,
 				E76E2964288A8696002EE063 /* Model */,
 				E74EBE0F28B0C63B0094C5FD /* ViewController */,
-				E74EBE1428B0C7800094C5FD /* TableViewSection */,
-				E74EBE1128B0C6AA0094C5FD /* TableViewCells */,
 				E74EBE1328B0C6F80094C5FD /* Storyboard */,
 				E74EBE1228B0C6F10094C5FD /* Assets */,
 				E7204CB0286701CE00010B2F /* Info.plist */,
@@ -129,38 +126,13 @@
 			path = TestApp;
 			sourceTree = "<group>";
 		};
-		E7204CBE286705D700010B2F /* GridCollectionViewCell */ = {
-			isa = PBXGroup;
-			children = (
-				E77B3D6B28670B2F00B45B05 /* GridCollectionViewCell.swift */,
-				E77B3D6C28670B2F00B45B05 /* GridCollectionViewCell.xib */,
-			);
-			path = GridCollectionViewCell;
-			sourceTree = "<group>";
-		};
-		E7204CBF286705E100010B2F /* ItemTableViewCell */ = {
-			isa = PBXGroup;
-			children = (
-				E77B3D71286719E000B45B05 /* ItemTableViewCell.swift */,
-				E77B3D72286719E000B45B05 /* ItemTableViewCell.xib */,
-			);
-			path = ItemTableViewCell;
-			sourceTree = "<group>";
-		};
-		E7204CC6286706E100010B2F /* MenuCollectionViewCell */ = {
+		E74EBE0C28B0C4C90094C5FD /* MenuViewCell */ = {
 			isa = PBXGroup;
 			children = (
 				E77B3D6728670AE600B45B05 /* MenuCollectionViewCell.swift */,
 				E77B3D6828670AE600B45B05 /* MenuCollectionViewCell.xib */,
-			);
-			path = MenuCollectionViewCell;
-			sourceTree = "<group>";
-		};
-		E74EBE0C28B0C4C90094C5FD /* MenuViewCell */ = {
-			isa = PBXGroup;
-			children = (
-				E77B3D852868825F00B45B05 /* MenuTableViewCell */,
-				E7204CC6286706E100010B2F /* MenuCollectionViewCell */,
+				E77B3D812868825800B45B05 /* MenuTableViewCell.swift */,
+				E77B3D822868825800B45B05 /* MenuTableViewCell.xib */,
 			);
 			path = MenuViewCell;
 			sourceTree = "<group>";
@@ -168,8 +140,10 @@
 		E74EBE0D28B0C4D80094C5FD /* GridViewCell */ = {
 			isa = PBXGroup;
 			children = (
-				E77B3D862868941A00B45B05 /* GridTableViewCell */,
-				E7204CBE286705D700010B2F /* GridCollectionViewCell */,
+				E77B3D6B28670B2F00B45B05 /* GridCollectionViewCell.swift */,
+				E77B3D6C28670B2F00B45B05 /* GridCollectionViewCell.xib */,
+				E77B3D752867A21D00B45B05 /* GridTableViewCell.swift */,
+				E77B3D762867A21D00B45B05 /* GridTableViewCell.xib */,
 			);
 			path = GridViewCell;
 			sourceTree = "<group>";
@@ -177,7 +151,8 @@
 		E74EBE0E28B0C4F10094C5FD /* ItemViewCell */ = {
 			isa = PBXGroup;
 			children = (
-				E7204CBF286705E100010B2F /* ItemTableViewCell */,
+				E77B3D71286719E000B45B05 /* ItemTableViewCell.swift */,
+				E77B3D72286719E000B45B05 /* ItemTableViewCell.xib */,
 			);
 			path = ItemViewCell;
 			sourceTree = "<group>";
@@ -186,18 +161,9 @@
 			isa = PBXGroup;
 			children = (
 				E77B3D7B28687CF800B45B05 /* MainViewController.swift */,
+				E7C3AA1F28BF397B00A655D0 /* Cells */,
 			);
 			path = ViewController;
-			sourceTree = "<group>";
-		};
-		E74EBE1128B0C6AA0094C5FD /* TableViewCells */ = {
-			isa = PBXGroup;
-			children = (
-				E74EBE0C28B0C4C90094C5FD /* MenuViewCell */,
-				E74EBE0D28B0C4D80094C5FD /* GridViewCell */,
-				E74EBE0E28B0C4F10094C5FD /* ItemViewCell */,
-			);
-			path = TableViewCells;
 			sourceTree = "<group>";
 		};
 		E74EBE1228B0C6F10094C5FD /* Assets */ = {
@@ -224,39 +190,12 @@
 			path = TableViewSection;
 			sourceTree = "<group>";
 		};
-		E74EBE1528B0C7A50094C5FD /* Constants */ = {
-			isa = PBXGroup;
-			children = (
-				E7B5EC2728AA4B9100D3D477 /* Constants.swift */,
-			);
-			path = Constants;
-			sourceTree = "<group>";
-		};
 		E76E2964288A8696002EE063 /* Model */ = {
 			isa = PBXGroup;
 			children = (
 				E7A548272897AC2200B93CD3 /* Results.swift */,
-				E7A548252895793900B93CD3 /* NetworkService.swift */,
 			);
 			path = Model;
-			sourceTree = "<group>";
-		};
-		E77B3D852868825F00B45B05 /* MenuTableViewCell */ = {
-			isa = PBXGroup;
-			children = (
-				E77B3D812868825800B45B05 /* MenuTableViewCell.swift */,
-				E77B3D822868825800B45B05 /* MenuTableViewCell.xib */,
-			);
-			path = MenuTableViewCell;
-			sourceTree = "<group>";
-		};
-		E77B3D862868941A00B45B05 /* GridTableViewCell */ = {
-			isa = PBXGroup;
-			children = (
-				E77B3D752867A21D00B45B05 /* GridTableViewCell.swift */,
-				E77B3D762867A21D00B45B05 /* GridTableViewCell.xib */,
-			);
-			path = GridTableViewCell;
 			sourceTree = "<group>";
 		};
 		E77B3D872868944400B45B05 /* AppSceneDelegate */ = {
@@ -266,6 +205,24 @@
 				E7204CA1286701CB00010B2F /* SceneDelegate.swift */,
 			);
 			path = AppSceneDelegate;
+			sourceTree = "<group>";
+		};
+		E7C3AA1E28BF2E3D00A655D0 /* NetworkService */ = {
+			isa = PBXGroup;
+			children = (
+				E7A548252895793900B93CD3 /* NetworkService.swift */,
+			);
+			path = NetworkService;
+			sourceTree = "<group>";
+		};
+		E7C3AA1F28BF397B00A655D0 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				E74EBE0C28B0C4C90094C5FD /* MenuViewCell */,
+				E74EBE0D28B0C4D80094C5FD /* GridViewCell */,
+				E74EBE0E28B0C4F10094C5FD /* ItemViewCell */,
+			);
+			path = Cells;
 			sourceTree = "<group>";
 		};
 		E7F5E78A28AE90F500ECA839 /* Extensions */ = {
@@ -418,7 +375,6 @@
 				E7A548282897AC2200B93CD3 /* Results.swift in Sources */,
 				E77B3D73286719E000B45B05 /* ItemTableViewCell.swift in Sources */,
 				E7204CA2286701CB00010B2F /* SceneDelegate.swift in Sources */,
-				E7B5EC2828AA4B9100D3D477 /* Constants.swift in Sources */,
 				E77B3D7C28687CF800B45B05 /* MainViewController.swift in Sources */,
 				E77B3D832868825800B45B05 /* MenuTableViewCell.swift in Sources */,
 			);
